@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
-const params = require('./src/params');
-const proxy = require('./src/proxy');
+const params = require('./params');
+const proxy = require('./proxy');
 const app = require('express')();
 app.enable('trust proxy');
 app.get('/', params, proxy);
